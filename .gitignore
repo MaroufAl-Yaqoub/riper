@@ -9,11 +9,6 @@ __pycache__/
 *.pyc
 
 # AI Models
-*.pt
-*.bin
-*.safetensors
-*.joblib
-artifacts/
 
 # Env
 .env

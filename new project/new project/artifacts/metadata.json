@@ -1,0 +1,44 @@
+{
+  "runtime_config": {
+    "image_model_name": "google/vit-base-patch16-224",
+    "text_model_name": "distilbert-base-uncased",
+    "output_dir": "artifacts",
+    "seed": 42,
+    "validation_ratio": 0.2,
+    "image_epochs": 2,
+    "text_epochs": 2,
+    "image_batch_size": 8,
+    "text_batch_size": 16,
+    "image_learning_rate": 2e-05,
+    "text_learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "max_text_length": 192,
+    "use_mixed_precision": true,
+    "balance_datasets": true,
+    "num_workers": 0
+  },
+  "image_data": {
+    "dataset_name": "yashduhan/deepfake-detection-small",
+    "split": "train",
+    "train_size": 1120,
+    "validation_size": 280,
+    "skipped_samples": 0
+  },
+  "text_data": {
+    "dataset_name": "codesignal/sms-spam-collection",
+    "split": "train",
+    "train_size": 1196,
+    "validation_size": 298,
+    "skipped_samples": 0
+  },
+  "image_metrics": {
+    "loss": 0.24529601085398878,
+    "accuracy": 0.8964285714285715,
+    "examples": 280.0
+  },
+  "text_metrics": {
+    "loss": 0.03126545064151287,
+    "accuracy": 0.9899328859060402,
+    "examples": 298.0
+  }
+}
