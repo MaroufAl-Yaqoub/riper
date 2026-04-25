@@ -1,0 +1,23 @@
+# Flutter
+.build/
+.dart_tool/
+.packages
+pubspec.lock
+
+# Python
+__pycache__/
+*.pyc
+
+# AI Models
+*.pt
+*.bin
+*.safetensors
+*.joblib
+artifacts/
+
+# Env
+.env
+
+# Database
+*.backup
+*.db
